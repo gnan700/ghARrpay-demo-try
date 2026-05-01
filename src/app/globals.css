@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #4ADE80;
+  --color-chart-green: #22C55E;
+  --color-chart-muted: #14532D;
+  --color-dark-bg: #121212;
+  --color-card-bg: #1E1E1E;
+  --color-sidebar-bg: #181818;
+}
+
+:root {
+  --background: #121212;
+  --foreground: #FFFFFF;
+  --card: #1E1E1E;
+  --border: #2E2E2E;
+  --primary: #4ADE80;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass-card {
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #4ADE80 0%, #22C55E 100%);
+}
+
+.chart-ring {
+  background: conic-gradient(var(--primary) 78%, #2E2E2E 0);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
